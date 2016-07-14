@@ -2,58 +2,58 @@ resources:
   - name: image1-test
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/sample_node"
+    pointer:
+     sourceName: "revathird/sample_node"
       isPull: true
       tag: latest
   
   - name: image2-test
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/imagenode"
+    pointer:
+      sourceName: "revathird/imagenode"
       isPull: true
       tag: latest
   - name: image3-test
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/imagenode"
+    pointer:
+     sourceName: "revathird/imagenode"
       isPull: true
       tag: latest
   - name: image4-test
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/imagenode"
+    pointer:
+     sourceName: "revathird/imagenode"
       isPull: true
       tag: latest
   - name: image5-test
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/sample_node"
+    pointer:
+      sourceName: "revathird/sample_node"
       isPull: true
       tag: latest
   - name: test1
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/sample_node"
+    pointer:
+      sourceName: "revathird/sample_node"
       isPull: true
       tag: latest
       
   - name: pipe1-image
     type: image
     integration: docker integrtion
-    source:
-      name: "revathird/sample_node"
+    pointer:
+      sourceName: "revathird/sample_node"
       isPull: true
       tag: latest
 
   - name: pipe1-opts
     type: dockerOptions
-    source:
+    pointer:
       memory: 64
       cpu-shares: 256
       portMappings:
@@ -61,13 +61,13 @@ resources:
 
   - name: pipe1-params
     type: params
-    source:
+    pointer:
       params:
         MONGO_API_URL: "localhost:28017"
         FOO: "bar"
   - name: env-test
     type: ecsCluster
     integration: ecsdeploy
-    source:
-      name : "testCL" #name of the cluster we are deploying
+    pointer:
+      sourceName : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
