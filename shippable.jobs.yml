@@ -1,9 +1,1 @@
-jobs:
-  - name: test-job
-    type: manifest
-    steps:
-      - GET: image1-test
-      - GET: image2-test
-      - GET: image3-test
-      - GET: triggertest2
-  
+
