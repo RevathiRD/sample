@@ -5,7 +5,8 @@ resources:
     pointer:
      sourceName: "revathird/sample_node"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
   
   - name: image2-test
     type: image
@@ -13,35 +14,40 @@ resources:
     pointer:
       sourceName: "revathird/imagenode"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
   - name: image3-test
     type: image
     integration: docker integrtion
     pointer:
-     sourceName: "revathird/imagenode"
+      sourceName: "revathird/imagenode"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
   - name: image4-test
     type: image
     integration: docker integrtion
     pointer:
-     sourceName: "revathird/imagenode"
+      sourceName: "revathird/imagenode"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
   - name: image5-test
     type: image
     integration: docker integrtion
     pointer:
       sourceName: "revathird/sample_node"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
   - name: test1
     type: image
     integration: docker integrtion
     pointer:
       sourceName: "revathird/sample_node"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
       
   - name: pipe1-image
     type: image
@@ -49,7 +55,8 @@ resources:
     pointer:
       sourceName: "revathird/sample_node"
       isPull: true
-      tag: latest
+    initialVersion:
+      versionName: latest
 
   - name: pipe1-opts
     type: dockerOptions
