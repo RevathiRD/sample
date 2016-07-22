@@ -5,6 +5,6 @@ resources:
     pointer:
       sourceName: "revathird/imagenode"
     seed:
-      versionName: latest
+      versionName: latest_version
 
   
