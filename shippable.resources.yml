@@ -1,5 +1,5 @@
 resources:
-  - name: dv-image
+  - name: img1
     type: image
     integration: docker integrtion
     pointer:
