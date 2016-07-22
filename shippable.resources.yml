@@ -1,5 +1,5 @@
 resources:
-  - name: img1
+  - name: img2
     type: image
     integration: docker integrtion
     pointer:
