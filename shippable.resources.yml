@@ -1,82 +1,10 @@
 resources:
-  - name: image1-test
+  - name: dv-image
     type: image
     integration: docker integrtion
     pointer:
-     sourceName: "revathird/sample_node"
-      isPull: true
-    initialVersion:
+      sourceName: "revathird/imagenode"
+    seed:
       versionName: latest
+
   
-  - name: image2-test
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/imagenode"
-      isPull: true
-    initialVersion:
-      versionName: latest
-  - name: image3-test
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/imagenode"
-      isPull: true
-    initialVersion:
-      versionName: latest
-  - name: image4-test
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/imagenode"
-      isPull: true
-    initialVersion:
-      versionName: latest
-  - name: image5-test
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/sample_node"
-      isPull: true
-    initialVersion:
-      versionName: latest
-  - name: test1
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/sample_node"
-      isPull: true
-    initialVersion:
-      versionName: latest
-      
-  - name: pipe1-image
-    type: image
-    integration: docker integrtion
-    pointer:
-      sourceName: "revathird/sample_node"
-      isPull: true
-    initialVersion:
-      versionName: latest
-
-  - name: pipe1-opts
-    type: dockerOptions
-    pointer:
-      memory: 64
-      cpu-shares: 256
-      portMappings:
-        - "80:80"
-
-  - name: pipe1-params
-    type: params
-    pointer:
-      params:
-        MONGO_API_URL: "localhost:28017"
-        FOO: "bar"
-  - name: env-test
-    type: ecsCluster
-    integration: ecsdeploy
-    pointer:
-      sourceName : "testCL" #name of the cluster we are deploying
-      region: "us-west-2"
-
-
