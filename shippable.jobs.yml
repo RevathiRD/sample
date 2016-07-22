@@ -1,6 +1,6 @@
 jobs:
-  - name: job1
+  - name: jobtest
     type: manifest
     steps:
-      - IN: img1
+      - IN: img2
       - TASK: managed
