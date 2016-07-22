@@ -1,1 +1,6 @@
-
+jobs:
+  - name: job1
+    type: manifest
+    steps:
+      - IN: img1
+      - TASK: managed
