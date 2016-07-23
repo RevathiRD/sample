@@ -11,6 +11,9 @@ resources:
     seed:
       versionName: "1.2.3"
 
-
+  - name: testagain-version12
+    type: version
+    seed:
+      versionName: "1.2.3"
 
   
