@@ -6,6 +6,10 @@ resources:
       sourceName: "revathird/imagenode"
     seed:
       versionName: latest_version_1
+  - name: testagain-version
+    type: version
+    seed:
+      versionName: "1.2.3"
 
 
 
